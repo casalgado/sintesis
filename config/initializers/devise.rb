@@ -3,7 +3,7 @@
 Devise.setup do |config|
 
   # Added by me:
-  config.secret_key = 'd8cf40748f75cb176a0313b5b5a2d5f34469d3b07e3c1dbff83777d506abb0741d1fdbce0141cfd2437c727e615ad010666ecc94b6e6fdb9b3c604f25037ad1d' if Rails.env.production?
+  config.secret_key = ENV["DEVISE_SECRET_KEY"] if Rails.env.production?
 
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing

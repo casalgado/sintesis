@@ -23,6 +23,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'sqlite3'
+  gem 'figaro'
 end
 
 group :development do
@@ -34,6 +35,7 @@ end
 
 group :production do
   gem 'pg', '~> 0.20.0'
+  gem 'byebug'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
