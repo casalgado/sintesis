@@ -14,5 +14,9 @@ class Entry < ApplicationRecord
   	end
   end
 
+  def next(sources)
+  	
+  end
+
 
 end

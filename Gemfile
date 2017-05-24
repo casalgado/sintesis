@@ -18,7 +18,9 @@ gem 'jbuilder', '~> 2.5'
 # gems added by me
 gem 'devise', '~> 4.3'
 gem 'figaro'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 2' # not being used currently
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
