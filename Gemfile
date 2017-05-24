@@ -17,13 +17,14 @@ gem 'jbuilder', '~> 2.5'
 
 # gems added by me
 gem 'devise', '~> 4.3'
+gem 'figaro'
+gem 'aws-sdk', '~> 2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'sqlite3'
-  gem 'figaro'
 end
 
 group :development do
@@ -35,7 +36,6 @@ end
 
 group :production do
   gem 'pg', '~> 0.20.0'
-  gem 'byebug'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

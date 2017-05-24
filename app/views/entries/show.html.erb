@@ -1,0 +1,7 @@
+<h1>Entries#show</h1>
+<p><%= @entry_type %></p>
+
+
+<% @attachments.each do |a| -%>
+	<%= image_tag a.content, :style => "width: 200px;" %>
+<% end -%>
