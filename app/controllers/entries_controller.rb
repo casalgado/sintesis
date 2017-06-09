@@ -5,8 +5,8 @@ class EntriesController < ApplicationController
   def show
   	@entry = Entry.find(params[:id])
   	@attachments = @entry.attachments
-    source = Source.find(params[:source_id])
-    @entry_type = Medium.find(Entry.first.source.medium_id).media
+    @active_sources = [1,2,3]
+    @entry_type = @entry.type
   end
 
   def edit

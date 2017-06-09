@@ -1,7 +1,30 @@
-<h1>Entries#show</h1>
-<p><%= @entry_type %></p>
 
 
-<% @attachments.each do |a| -%>
-	<%= image_tag a.content, :style => "width: 200px;" %>
-<% end -%>
+
+<div class="container entries-show-container">
+	<% if @entry_type == 'image' %>
+		<%= render 'image' %>
+	<% elsif @entry_type == 'text' %>
+		<%= render 'text' %>
+	<% else %>
+		<%= render 'audio' %>
+	<% end %>
+</div>
+
+<div class="pagination-links" id="next-link">
+	<%= link_to("next", source_entry_path(id: @entry.next(@active_sources))) %>
+</div>
+
+<div class="pagination-links" id="previous-link">
+	<%= link_to("prev", source_entry_path(id: @entry.previous(@active_sources))) %>
+</div>
+
+
+
+
+
+<%= @entry.id %>
+
+<script type="text/javascript">
+	$('.nav-links').show()
+</script>

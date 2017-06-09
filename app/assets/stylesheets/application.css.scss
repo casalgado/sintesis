@@ -12,8 +12,18 @@
  *
  */
 
+// Custom Variables
+
+$navbar-inverse-bg: black;
+$btn-border-radius-base:  0px;
+$btn-border-radius-large: 0px;
+$btn-border-radius-small: 0px;
+
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "*";
 
 
 // to compensate for fixed-top navbar
@@ -21,18 +31,14 @@ body {
 	padding-top: 50px;
 }
 
-.navbar-nav {
+// General classes
 
-	li {
-		width: 30px;
-		height: 30px;
-		background-color: white;
-		margin: 10px;
-	}
-
-	a {
-		padding: 0px !important;
-		margin: 0px !important;
-		font-size: 20px;
-	}
+.center-content {
+	display:flex;
+	justify-content:center;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+

@@ -35,7 +35,6 @@ Source.find(3).attachments.create!(content: "http://www.fuse.tv/image/56fe73a1e0
 
 # Load Source Data
 
-
 Source.load(@source_data)
 
 

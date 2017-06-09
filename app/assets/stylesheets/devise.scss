@@ -1,0 +1,28 @@
+
+.sessions-new {
+	margin-top: 100px;
+
+	.actions {
+		margin-top: 50px;
+
+		input {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50px;
+		}
+	}
+
+	.field {
+		width: 400px;
+		margin-top: 50px;
+	}
+
+	input {
+		  font-size: 14px;
+		  height: auto;
+		  padding: 7px 9px;
+		  width: 100%;
+		  text-align: center
+		}
+}

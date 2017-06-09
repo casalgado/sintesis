@@ -1,0 +1,21 @@
+<% if user_signed_in? %>
+  <li class="nav-links dropdown" > 
+    <span id="dropdownMenu1" class="glyphicon glyphicon-book dropdown-toggle" aria-hidden="true"> </span><p> SRCS </p>
+  </li>
+  <li class="nav-links dropdown" > 
+    <span id="dropdownMenu2" class="glyphicon glyphicon-tags dropdown-toggle" aria-hidden="true"> </span><p> TAGS </p>
+  </li>
+  <li> 
+    <div> <%= link_to (image_tag 'ying-yang.png', :style => "height: 70px;"), root_path %> </div>
+  </li>
+  <li class="nav-links dropdown" > 
+    <span id="dropdownMenu3" class="glyphicon glyphicon-calendar dropdown-toggle" aria-hidden="true"> </span><p> CLDR </p>
+  </li>
+  <li class="nav-links"> 
+    <span class="glyphicon glyphicon-search" aria-hidden="true"> </span><p> SRCH </p>
+  </li>
+<% else %>
+  <li> 
+    <div> <%= image_tag 'ying-yang.png', :style => "height: 70px;" %> </div>
+  </li>
+<% end %>

@@ -6,26 +6,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Teko:500,600" rel="stylesheet"> 
   </head>
 
   <body>
   	<!-- Bootstrap Navbar -->
   	<nav class="navbar navbar-inverse navbar-fixed-top">
-  		<div class="container-fluid" style="display:flex;justify-content:center;">
-  			<ul class="nav navbar-nav" style="display:flex;justify-content:space-around;">
-  			<li> 
-  				<a href="#" class="glyphicon glyphicon-book" aria-hidden="true"> </a> 
-  			</li>
-  			<li> 
-  				<a href="#" class="glyphicon glyphicon-tags" aria-hidden="true"> </a> 
-  			</li>
-  			<li> 
-  				<a href="#" class="glyphicon glyphicon-pencil" aria-hidden="true"> </a>
-  			</li>
-  			<li> 
-  				<a href="#" class="glyphicon glyphicon-search" aria-hidden="true"> </a>
-  			</li>
-  				<li style="width:90px"> </li>
+  		<div class="container-fluid center-content" style="">
+  			<ul class="nav navbar-nav" style="">
+          <%= render 'layouts/navbar-links' %>
   			</ul>
   		</div>
 	</nav>
@@ -33,8 +22,8 @@
 	<!-- Page Content -->
     <%= yield %>
 
-    <!-- Scroll Test -->
-    <div style="height:1220px;"></div>
 
   </body>
 </html>
+
+

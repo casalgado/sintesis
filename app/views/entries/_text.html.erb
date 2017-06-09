@@ -1,0 +1,10 @@
+
+
+<div class="row text-row">
+	<h4> <%= @entry.date.year %> </h4>
+	<h5> <%= @entry.date.strftime('%A %-d %B') %> </h4>
+	<% @attachments.first.content.split("\n").each do |t| -%>
+		<p> <%= t %> </p>
+	<% end -%>
+</div>
+

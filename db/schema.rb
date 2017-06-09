@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170523152923) do
   create_table "entries", force: :cascade do |t|
     t.date "date"
     t.integer "source_id"
+    t.string "orientation", default: "Left"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["source_id"], name: "index_entries_on_source_id"

@@ -1,3 +1,54 @@
 // Place all the styles related to the entries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.pagination-links {
+	position: fixed;
+	top: 50%;
+}
+
+#next-link {
+	right: 5%;
+}
+
+#previous-link {
+	left: 5%;
+}
+
+.entries-show-container {
+	background-color: whitesmoke;
+	width: 80%;
+	margin-top: 5%;
+}
+
+.image-row {
+
+	img {
+		width: 50%;
+		margin-top: 5%;
+		float: left;
+	}
+
+}
+
+.center-image {
+	margin-left: 25%;
+}
+
+.text-row {
+	padding: 3% 6% 6% 6%;
+	text-indent: 1em;
+
+	p {
+		text-align: justify;
+	}
+}
+
+.text-row, .image-row {
+
+	h4, h5, h6 {
+		text-align: left;
+	}
+
+}

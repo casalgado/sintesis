@@ -1,0 +1,36 @@
+
+
+<div class="row image-row">
+	<h4> <%= @entry.date.year %> </h4>
+	<h5> <%= @entry.date.strftime('%A %-d %B') %> </h4>
+	<div class="image-container" data-orientation="<%= @entry.orientation %>">
+		<% @attachments.each do |a| -%>
+			<%= image_tag a.content, data: "" %>
+		<% end -%>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+var isEven  = function(x) { return !( x & 1 ); };
+var isOdd   = function(x) { return x & 1; };
+
+
+if ( $('.image-container').data("orientation") == 'Left' ) {
+
+    $('.image-container > img:first-of-type').addClass('center-image')
+
+    if ( isEven($('.image-container img').length ) ) { 
+    	$('.image-container > img:last-of-type').addClass('center-image') 
+    };
+
+} else { 
+
+	if ( isOdd($('.image-container img').length ) ) { 
+    	$('.image-container > img:last-of-type').addClass('center-image') 
+    };    
+}
+
+</script>

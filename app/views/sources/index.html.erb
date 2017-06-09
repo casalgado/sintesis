@@ -19,3 +19,4 @@
 <% @sources.each do |source| -%>
 	<%= link_to (image_tag source.attachments.first.content, :style => "width: 200px;"), source_entry_path(source, source.entries.first) %>
 <% end -%>
+
